@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "webapp" {
-  bucket = var.domain_name
+  bucket        = var.domain_name
+  force_destroy = true
 }
 
 data "aws_s3_bucket" "webapp_selected" {
