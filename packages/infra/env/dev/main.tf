@@ -1,13 +1,13 @@
 terraform {
 
   # This needs to be commented out on initial run before backend module (tf-state) is created.
-  backend "s3" {
-    bucket         = "cr-devweekly-terraform-demo-bucket"
-    key            = "terraform.tfstate"
-    region         = "eu-central-1"
-    dynamodb_table = "cr-devweekly-terraform-demo-table"
-    encrypt        = true
-  }
+  # backend "s3" {
+  #   bucket         = "cr-devweekly-terraform-demo-bucket"
+  #   key            = "terraform.tfstate"
+  #   region         = "eu-central-1"
+  #   dynamodb_table = "cr-devweekly-terraform-demo-table"
+  #   encrypt        = true
+  # }
 
   required_providers {
     aws = {
@@ -31,8 +31,8 @@ module "tf_state_dev" {
 }
 
 
-module "site_dev" {
-  source        = "../../modules/site"
-  domain_name   = "mysite.roope.dev"
-  r53_zone      = "roope.dev"
-}
+# module "site_dev" {
+#   source        = "../../modules/site"
+#   domain_name   = "mysite.roope.dev"
+#   r53_zone      = "roope.dev"
+# }
