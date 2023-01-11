@@ -31,8 +31,8 @@ module "tf_state_dev" {
 }
 
 
-# module "site_dev" {
-#   source        = "../../modules/site"
-#   domain_name   = "mysite.roope.dev"
-#   r53_zone      = "roope.dev"
-# }
+module "site_dev" {
+  source        = "../../modules/site"
+  domain_name   = "mysite.roope.dev"
+  r53_zone      = "roope.dev"
+}
