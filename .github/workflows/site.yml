@@ -12,7 +12,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        bucket: ["mysite.roope.dev"]
+        bucket: ["mysite.roope.dev", "mysite2.roope.dev"]
     runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
