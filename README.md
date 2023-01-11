@@ -45,6 +45,8 @@ The site is plain [Next.js application](https://nextjs.org/) from which we will 
 Basically what we do is:
 
 ```bash
+npm run build -w=site
+npm run export -w=site
 aws s3 sync packages/site/out s3://my-bucket/
 ```
 

@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "tf_state" {
-  bucket = var.state_bucket
+  bucket        = var.state_bucket
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_acl" "tf_state" {
