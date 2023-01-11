@@ -10,6 +10,8 @@ These dependencies are needed to be able to run the commands locally.
 - Node.js ([nvm](https://github.com/nvm-sh/nvm))
 - [AWS CLI](https://aws.amazon.com/cli/)
 
+In this example the Route53 Hosted zone was created manually beforehand.
+
 ## Infra
 
 1. Run Terraform init to intitialize the working directory with needed configs:
