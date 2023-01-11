@@ -1,0 +1,18 @@
+{
+  "name": "infra",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "infra:init": "cd env/dev && dotenv-load terraform init -force-copy",
+    "infra:plan": "cd env/dev && dotenv-load terraform plan",
+    "infra:apply": "cd env/dev && dotenv-load terraform apply -auto-approve",
+    "infra:destroy": "cd env/dev && dotenv-load terraform destroy -auto-approve",
+    "infra:fmt": "terraform fmt -recursive"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv-load": "^2.0.1"
+  }
+}
