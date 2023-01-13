@@ -36,3 +36,9 @@ module "site_dev" {
   domain_name = "mysite.roope.dev"
   r53_zone    = "roope.dev"
 }
+
+module "site2_dev" {
+  source      = "../../modules/site"
+  domain_name = "mysite2.roope.dev"
+  r53_zone    = "roope.dev"
+}
